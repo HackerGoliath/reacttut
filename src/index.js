@@ -1,5 +1,7 @@
-// Links: https://babeljs.io/
-
+/* Links: 
+https://babeljs.io/
+https://picsum.photos/
+*/
 // var React = require('react'); // use for working with html and it includes webpack and babel
 // Because of react include modern js we can use import
 // import React, { Fragment } from 'react'; // for using JSX we must import react
@@ -140,16 +142,36 @@ import ReactDOM from 'react-dom';
 // ----------------------------------
 
 // Challenge 2 Current date and time
-const name = "Deepak";
-const date = new Date().toLocaleDateString();
-const time = new Date().toLocaleTimeString();
+// const name = "Deepak";
+// const date = new Date().toLocaleDateString();
+// const time = new Date().toLocaleTimeString();
 
+// ReactDOM.render(
+//   <>
+//     <h1>My name is : {name}</h1>
+//     <p>Today's date is : {date}</p>
+//     <p>Current time is : {time}</p>
+//   </>,
+//   document.getElementById("root")
+// );
+// -------------------------------------------
+
+
+// jsx attributes
+// Also search for HTML global Attributes
+const name = "Deepak";
+const img1 = "https://picsum.photos/200/300"
+const img2 = "https://picsum.photos/250/300"
+const img3 = "https://picsum.photos/300/300"
+const link = "https://www.w3schools.com/"
 ReactDOM.render(
   <>
-    <h1>My name is : {name}</h1>
-    <p>Today's date is : {date}</p>
-    <p>Current time is : {time}</p>
+    <h1 contentEditable="true">My name is : {name}</h1>
+    <img src={img1} alt="random images" />
+    <img src={img2} alt="random images" />
+    <a href={link} target="_deepak">
+      <img src={img3} alt="random images" />
+    </a>
   </>,
   document.getElementById("root")
 );
-
