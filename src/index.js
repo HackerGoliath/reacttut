@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
 
 // Here first arguement is JSX - Javascript Extension or Javascript XML
-ReactDOM.render(<h1>Hello World!!! I am here</h1>, document.getElementById('root'));
+// ReactDOM.render(<h1>Hello World!!! I am here</h1>, document.getElementById('root'));
 
 // The above jsx code gets converted into following js so the browser can understand
 // "use strict";
@@ -38,7 +38,30 @@ ReactDOM.render(<h1>Hello World!!! I am here</h1>, document.getElementById('root
 
 
 // In pure javascript you can print like this
-var h1 = document.createElement('h1');
-h1.innerHTML = "Hello World!!!";
-document.getElementById("root").appendChild(h1);
+// var h1 = document.createElement('h1');
+// h1.innerHTML = "Hello World!!!";
+// document.getElementById("root").appendChild(h1);
+
+// render method takes only one single jsx element as first parameter if you want to pass multiple jsx elements then the elements must be wrapped in a one single jsx element (<></>)
+
+// First Method
+// ReactDOM.render(
+//   <div>
+//     <h1>Hello World</h1>
+//     <p>How are you</p>
+//     <h2>Plz tell me</h2>
+//   </div>,
+//   document.getElementById("root"))
+
+// Second Method
+// for react version greater than 16 you don't need to write div to wrap jsx elements
+// you can store it in array or using as an array of jsx elements
+// const arr = ['deepak','rohan','shahid']
+ReactDOM.render(
+  [
+    <h1>Hello World 2</h1>,
+    <p>How are you?</p>,
+    <h2>Plz tell me Are you fine?</h2>
+  ],
+  document.getElementById("root"))
 
