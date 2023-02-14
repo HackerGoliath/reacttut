@@ -105,21 +105,35 @@ import ReactDOM from 'react-dom';
 
 // Js expressions in Jsx
 // Within curly braces we use Js expressions(but we can not use statements inside {})
-const fman = "Deepak"
+// const fman = "Deepak"
+// ReactDOM.render(
+//   <>
+//     <h1>First man is {fman}</h1>
+//     <p>My lucky number is {3 * 2 + 1}</p>
+//     <p>Generated random number between 1 to 10 : {Math.floor(Math.random() * 10) + 1}</p>
+//     <p>
+//       Js Statements can not be executed inside curly braces because it returns a value<br />
+//       {/* {if(3>5){
+//         console.log("true");
+//       }
+//       else{
+//         console.log("False");
+//       }} */}
+//     </p>
+//   </>,
+//   document.getElementById("root")
+// );
+// ------------------------------------
+
+// Template Literals eg: console.log(`My name is ${fname} ${lname}`)
+const fname = "Deepak";
+const lname = "Bhai";
+
 ReactDOM.render(
   <>
-    <h1>First man is {fman}</h1>
-    <p>My lucky number is {3 * 2 + 1}</p>
-    <p>Generated random number between 1 to 10 : {Math.floor(Math.random() * 10) + 1}</p>
-    <p>
-      Js Statements can not be executed inside curly braces because it returns a value<br />
-      {/* {if(3>5){
-        console.log("true");
-      }
-      else{
-        console.log("False");
-      }} */}
-    </p>
+    <h1>First method is : {fname} {lname}</h1>
+    <h1>First second is : {fname + " " + lname}</h1>
+    <h1>{`Template literal method is : ${fname} ${lname} and my lucky number is ${5 + 5}`}</h1>
   </>,
   document.getElementById("root")
 );
