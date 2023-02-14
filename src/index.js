@@ -76,10 +76,27 @@ import ReactDOM from 'react-dom';
 //   document.getElementById("root"));
 
 // You can write above as 
+// ReactDOM.render(
+//   <>
+//     <h1>Hello World</h1>
+//     <p>How are you</p>
+//     <h2>Plz tell me</h2>
+//   </>,
+//   document.getElementById("root"));
+
+
+// Challenge 1
 ReactDOM.render(
   <>
-    <h1>Hello World</h1>
-    <p>How are you</p>
-    <h2>Plz tell me</h2>
+    <h1>Five Best Netflix Series</h1>
+    <p>My favourites are</p>
+    <ol>
+      <li>The Watchers</li>
+      <li>Stranger Things</li>
+      <li>Narcos</li>
+      <li>Arrow</li>
+      <li>The Flash</li>
+    </ol>
   </>,
-  document.getElementById("root"));
+  document.getElementById("root")
+)
