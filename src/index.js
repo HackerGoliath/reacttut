@@ -2,7 +2,8 @@
 
 // var React = require('react'); // use for working with html and it includes webpack and babel
 // Because of react include modern js we can use import
-import React, { Fragment } from 'react'; // for using JSX we must import react
+// import React, { Fragment } from 'react'; // for using JSX we must import react
+import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 import ReactDOM from 'react-dom';
 
@@ -86,17 +87,39 @@ import ReactDOM from 'react-dom';
 
 
 // Challenge 1
+// ReactDOM.render(
+//   <>
+//     <h1>Five Best Netflix Series</h1>
+//     <p>My favourites are</p>
+//     <ol>
+//       <li>The Watchers</li>
+//       <li>Stranger Things</li>
+//       <li>Narcos</li>
+//       <li>Arrow</li>
+//       <li>The Flash</li>
+//     </ol>
+//   </>,
+//   document.getElementById("root")
+// );
+// -----------------------------------
+
+// Js expressions in Jsx
+// Within curly braces we use Js expressions(but we can not use statements inside {})
+const fman = "Deepak"
 ReactDOM.render(
   <>
-    <h1>Five Best Netflix Series</h1>
-    <p>My favourites are</p>
-    <ol>
-      <li>The Watchers</li>
-      <li>Stranger Things</li>
-      <li>Narcos</li>
-      <li>Arrow</li>
-      <li>The Flash</li>
-    </ol>
+    <h1>First man is {fman}</h1>
+    <p>My lucky number is {3 * 2 + 1}</p>
+    <p>Generated random number between 1 to 10 : {Math.floor(Math.random() * 10) + 1}</p>
+    <p>
+      Js Statements can not be executed inside curly braces because it returns a value<br />
+      {/* {if(3>5){
+        console.log("true");
+      }
+      else{
+        console.log("False");
+      }} */}
+    </p>
   </>,
   document.getElementById("root")
-)
+);
