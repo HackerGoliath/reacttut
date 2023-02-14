@@ -2,7 +2,7 @@
 
 // var React = require('react'); // use for working with html and it includes webpack and babel
 // Because of react include modern js we can use import
-import React from 'react'; // for using JSX we must import react
+import React, { Fragment } from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 import ReactDOM from 'react-dom';
 
@@ -57,11 +57,29 @@ import ReactDOM from 'react-dom';
 // for react version greater than 16 you don't need to write div to wrap jsx elements
 // you can store it in array or using as an array of jsx elements
 // const arr = ['deepak','rohan','shahid']
-ReactDOM.render(
-  [
-    <h1>Hello World 2</h1>,
-    <p>How are you?</p>,
-    <h2>Plz tell me Are you fine?</h2>
-  ],
-  document.getElementById("root"))
+// ReactDOM.render(
+//   [
+//     <h1>Hello World array</h1>,
+//     <p>How are you?</p>,
+//     <h2>Plz tell me Are you fine?</h2>
+//   ],
+//   document.getElementById("root"))
 
+// Third Method -> React fragment
+// if we use div to wrap then a div tag is created under root div to avoid this we use react Fragment
+// ReactDOM.render(
+//   <React.Fragment>
+//     <h1>Hello World</h1>
+//     <p>How are you</p>
+//     <h2>Plz tell me</h2>
+//   </React.Fragment>,
+//   document.getElementById("root"));
+
+// You can write above as 
+ReactDOM.render(
+  <>
+    <h1>Hello World</h1>
+    <p>How are you</p>
+    <h2>Plz tell me</h2>
+  </>,
+  document.getElementById("root"));
