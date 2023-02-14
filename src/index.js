@@ -126,14 +126,30 @@ import ReactDOM from 'react-dom';
 // ------------------------------------
 
 // Template Literals eg: console.log(`My name is ${fname} ${lname}`)
-const fname = "Deepak";
-const lname = "Bhai";
+// const fname = "Deepak";
+// const lname = "Bhai";
+
+// ReactDOM.render(
+//   <>
+//     <h1>First method is : {fname} {lname}</h1>
+//     <h1>First second is : {fname + " " + lname}</h1>
+//     <h1>{`Template literal method is : ${fname} ${lname} and my lucky number is ${5 + 5}`}</h1>
+//   </>,
+//   document.getElementById("root")
+// );
+// ----------------------------------
+
+// Challenge 2 Current date and time
+const name = "Deepak";
+const date = new Date().toLocaleDateString();
+const time = new Date().toLocaleTimeString();
 
 ReactDOM.render(
   <>
-    <h1>First method is : {fname} {lname}</h1>
-    <h1>First second is : {fname + " " + lname}</h1>
-    <h1>{`Template literal method is : ${fname} ${lname} and my lucky number is ${5 + 5}`}</h1>
+    <h1>My name is : {name}</h1>
+    <p>Today's date is : {date}</p>
+    <p>Current time is : {time}</p>
   </>,
   document.getElementById("root")
 );
+
