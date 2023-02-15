@@ -8,6 +8,7 @@ https://picsum.photos/
 import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 import ReactDOM from 'react-dom';
+import App from './App';
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
@@ -177,7 +178,7 @@ import ReactDOM from 'react-dom';
 // );
 
 // CSS Styling
-import "./index.css";
+// import "./index.css";
 // const name = "Deepak";
 // const img1 = "https://picsum.photos/200/300"
 // const img2 = "https://picsum.photos/250/300"
@@ -233,31 +234,65 @@ import "./index.css";
 
 
 // Challenge-3 Greeting Website
-let currDate = new Date();
-// currDate = currDate.getHours();
-currDate = 13;
+// let currDate = new Date();
+// // currDate = currDate.getHours();
+// currDate = 13;
 
-const cssStyle = {}
+// const cssStyle = {}
 
-let greeting = "";
-if (currDate >= 1 && currDate < 12) {
-  greeting = "Good Morning";
-  cssStyle.color = "green"
-}
-else if (currDate >= 12 && currDate < 19) {
-  greeting = "Good Afternoon";
-  cssStyle.color = "orange"
-}
-else {
-  greeting = "Good Night";
-  cssStyle.color = "gray"
-}
+// let greeting = "";
+// if (currDate >= 1 && currDate < 12) {
+//   greeting = "Good Morning";
+//   cssStyle.color = "green"
+// }
+// else if (currDate >= 12 && currDate < 19) {
+//   greeting = "Good Afternoon";
+//   cssStyle.color = "orange"
+// }
+// else {
+//   greeting = "Good Night";
+//   cssStyle.color = "gray"
+// }
+
+// ReactDOM.render(
+//   <>
+//     <div class="greet">
+//       <h1 className='heading'>Hello Sir,<span style={cssStyle}>{greeting}</span></h1>
+//     </div>
+//   </>,
+//   document.getElementById("root")
+// );
+// ====================================================
+
+
+// React Components
+// ReactDOM.render(
+//   <>
+//     <h1>My name is Deepak</h1>
+//     <p>This is my World</p>
+//     <ol>
+//       <li>First</li>
+//       <li>Second</li>
+//       <li>Third</li>
+//       <li>Fourth</li>
+//       <li>Fifth</li>
+//     </ol>
+//   </>,
+//   document.getElementById("root")
+// );
+// import Heading from './Heading';
+// import List from './List';
+// import Para from './Para';
+// ReactDOM.render(
+//   <>
+//     <Heading />
+//     <Para />
+//     <List />
+//   </>,
+//   document.getElementById("root")
+// );
 
 ReactDOM.render(
-  <>
-    <div>
-      <h1 className='heading'>Hello Sir,<span style={cssStyle}>{greeting}</span></h1>
-    </div>
-  </>,
+  <App />,
   document.getElementById("root")
 );
