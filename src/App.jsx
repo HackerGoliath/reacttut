@@ -46,18 +46,37 @@
 // ===========================================
 
 // Module import export
-const youtuber = "Deepak Technical";
-const favProg = "React Js";
+// const youtuber = "Deepak Technical";
+// const favProg = "React Js";
 
-function firstFunc() {
-    let str1;
-    return (str1 = "This is first Function");
+// function firstFunc() {
+//     let str1;
+//     return (str1 = "This is first Function");
+// }
+
+// function secondFunc() {
+//     let str2 = "This is second Function";
+//     return str2;
+// }
+
+// export default youtuber;
+// export { favProg, firstFunc, secondFunc };
+// ===================================================
+
+
+// Challenge-5 Simple Calculator
+import { add, sub, mul, div } from "./Calc"
+function App() {
+    return (
+        <>
+            <ol>
+                <li>The addition is : {add(40, 4)}</li>
+                <li>The subtraction is : {sub(40, 4)}</li>
+                <li>The multiplication is : {mul(40, 4)}</li>
+                <li>The division is : {div(40, 3)}</li>
+            </ol>
+        </>
+    );
 }
 
-function secondFunc() {
-    let str2 = "This is second Function";
-    return str2;
-}
-
-export default youtuber;
-export { favProg, firstFunc, secondFunc };
+export default App;

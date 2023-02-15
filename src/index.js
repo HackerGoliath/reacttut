@@ -8,6 +8,7 @@ https://picsum.photos/
 import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 import ReactDOM from 'react-dom';
+import App from './App';
 // import App from './App';
 // import "./index.css";
 
@@ -306,22 +307,30 @@ import ReactDOM from 'react-dom';
 
 // imported as wildcard
 // now all the imports get imported into ques as object
-import * as ques from "./App";
+// import * as ques from "./App";
+// ReactDOM.render(
+//   <>
+//     <ol>
+//       <li>Deepak</li>
+//       <li>Bhai</li>
+//       {/* <li>Youtuber : {youtuber}</li> */}
+//       {/* <li>Favourite Youtuber : {favyt}</li>
+//       <li>Favourite Programming Language : {favProg}</li>
+//       <li>{firstFunc()}</li>
+//       <li>{secondFunc()}</li> */}
+//       <li>{ques.default}</li>
+//       <li>{ques.favProg}</li>
+//       <li>{ques.firstFunc()}</li>
+//       <li>{ques.secondFunc()}</li>
+//     </ol>
+//   </>,
+//   document.getElementById("root")
+// );
+// ====================================================
+
+// Challenge-5 Simple Calculator
 ReactDOM.render(
-  <>
-    <ol>
-      <li>Deepak</li>
-      <li>Bhai</li>
-      {/* <li>Youtuber : {youtuber}</li> */}
-      {/* <li>Favourite Youtuber : {favyt}</li>
-      <li>Favourite Programming Language : {favProg}</li>
-      <li>{firstFunc()}</li>
-      <li>{secondFunc()}</li> */}
-      <li>{ques.default}</li>
-      <li>{ques.favProg}</li>
-      <li>{ques.firstFunc()}</li>
-      <li>{ques.secondFunc()}</li>
-    </ol>
-  </>,
+  <App />
+  ,
   document.getElementById("root")
 );
