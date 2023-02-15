@@ -8,8 +8,8 @@ https://picsum.photos/
 import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 import ReactDOM from 'react-dom';
-import App from './App';
-import "./index.css";
+// import App from './App';
+// import "./index.css";
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
@@ -293,7 +293,35 @@ import "./index.css";
 //   document.getElementById("root")
 // );
 
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById("root")
+// );
+// =============================================
+
+// Modules Import Export
+// import youtuber from './App';
+// default exported component import by any name
+// import favyt, { favProg, firstFunc, secondFunc } from "./App";
+
+// imported as wildcard
+// now all the imports get imported into ques as object
+import * as ques from "./App";
 ReactDOM.render(
-  <App />,
+  <>
+    <ol>
+      <li>Deepak</li>
+      <li>Bhai</li>
+      {/* <li>Youtuber : {youtuber}</li> */}
+      {/* <li>Favourite Youtuber : {favyt}</li>
+      <li>Favourite Programming Language : {favProg}</li>
+      <li>{firstFunc()}</li>
+      <li>{secondFunc()}</li> */}
+      <li>{ques.default}</li>
+      <li>{ques.favProg}</li>
+      <li>{ques.firstFunc()}</li>
+      <li>{ques.secondFunc()}</li>
+    </ol>
+  </>,
   document.getElementById("root")
 );
