@@ -1,6 +1,24 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
+body{
+  background-color: #b4f2e1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
 .heading{
+  padding: 20px 20px;
+  background-color: #ffc9c5;
+  border-radius: 20px;
   color:#fa9191;
   text-align: center;
   text-transform: capitalize;
@@ -8,7 +26,10 @@
   /* text-shadow: horizontal vertical blur; */
   text-shadow: 0px 2px 4px #ffe9c5;
   margin: 70px 0;
-  font-family: 'Josefin Sans', sans-serif;
+}
+
+span{
+  color: #eb6383;
 }
 
 .img_div{
