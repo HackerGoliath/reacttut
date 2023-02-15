@@ -9,6 +9,7 @@ import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 import ReactDOM from 'react-dom';
 import App from './App';
+import "./index.css";
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
