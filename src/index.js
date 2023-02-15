@@ -159,19 +159,74 @@ import ReactDOM from 'react-dom';
 
 // jsx attributes
 // Also search for HTML global Attributes
+// const name = "Deepak";
+// const img1 = "https://picsum.photos/200/300"
+// const img2 = "https://picsum.photos/250/300"
+// const img3 = "https://picsum.photos/300/300"
+// const link = "https://www.w3schools.com/"
+// ReactDOM.render(
+//   <>
+//     <h1 contentEditable="true">My name is : {name}</h1>
+//     <img src={img1} alt="random images" />
+//     <img src={img2} alt="random images" />
+//     <a href={link} target="_deepak">
+//       <img src={img3} alt="random images" />
+//     </a>
+//   </>,
+//   document.getElementById("root")
+// );
+
+// CSS Styling
+import "./index.css";
 const name = "Deepak";
 const img1 = "https://picsum.photos/200/300"
 const img2 = "https://picsum.photos/250/300"
 const img3 = "https://picsum.photos/300/300"
 const link = "https://www.w3schools.com/"
+// ReactDOM.render(
+//   <>
+//     <h1 contentEditable="true" className='heading'>My name is : {name}</h1>
+//     <div className='img_div'>
+//       <img src={img1} alt="random images" />
+//       <img src={img2} alt="random images" />
+//       <a href={link} target="_deepak">
+//         <img src={img3} alt="random images" />
+//       </a>
+//     </div>
+//   </>,
+//   document.getElementById("root")
+// );
+
+// Inline css
+const heading = {
+  color: "#fa9191",
+  textAlign: "center",
+  textTransform: "capitalize",
+  fontWeight: "bold",
+  /* text-shadow: "horizontal" vertical blur; */
+  textShadow: "0px 2px 4px #ffe9c5",
+  margin: "70px 0",
+  fontFamily: "'Josefin Sans', sans - serif"
+}
+// <h1 style = {{ color: "#fa9191",
+//   textAlign: "center",
+//   textTransform: "capitalize",
+//   fontWeight: "bold",
+//   /* text-shadow: "horizontal" vertical blur; */
+//   textShadow: "0px 2px 4px #ffe9c5",
+//   margin: "70px 0",
+//   fontFamily: 'Josefin Sans, sans - serif'}}> My name is: { name }</h1 >
 ReactDOM.render(
   <>
-    <h1 contentEditable="true">My name is : {name}</h1>
-    <img src={img1} alt="random images" />
-    <img src={img2} alt="random images" />
-    <a href={link} target="_deepak">
-      <img src={img3} alt="random images" />
-    </a>
+
+    <h1 style={heading}>My name is : {name}</h1>
+    <div className='img_div'>
+      <img src={img1} alt="random images" />
+      <img src={img2} alt="random images" />
+      <a href={link} target="_deepak">
+        <img src={img3} alt="random images" />
+      </a>
+    </div>
   </>,
   document.getElementById("root")
 );
