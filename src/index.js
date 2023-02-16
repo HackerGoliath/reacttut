@@ -10,7 +10,7 @@ import React from 'react'; // for using JSX we must import react
 import ReactDOM from 'react-dom';
 // import App from './App';
 // import App from './App';
-// import "./index.css";
+import "./index.css";
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
@@ -334,38 +334,45 @@ import ReactDOM from 'react-dom';
 
 // Netflix App
 import Card from "./Cards";
+import Sdata from './Sdata';
+
+// console.log(Sdata[0].imgsrc);
 ReactDOM.render(
   <>
+    <h1 className='heading_style'>List of Top Netflix Series in 2023</h1>
+
     <Card
-      imgsrc="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200813125652/dark-1.jpg"
-      sname="DARK "
-      title="A netflix Original Series"
-      link="https://www.netflix.com/in/title/80100172"
+      // className="kuchbhi"
+      imgsrc={Sdata[0].imgsrc}
+      sname={Sdata[0].sname}
+      title={Sdata[0].title}
+      link={Sdata[0].link}
     />
     <Card
-      imgsrc="https://i.ytimg.com/vi/2TfYui8A5L0/maxresdefault.jpg"
-      sname="EXTRA CURRICULAR"
-      title="A netflix Original Series"
-      link="https://www.netflix.com/in/title/80990668"
+      imgsrc={Sdata[1].imgsrc}
+      sname={Sdata[1].sname}
+      title={Sdata[1].title}
+      link={Sdata[1].link}
     />
     <Card
-      imgsrc="https://www.denofgeek.com/wp-content/uploads/2017/08/stranger-things-season-3-starcourt-teaser-netflix.jpg?fit=670%2C377"
-      sname="Stranger Things"
-      title="A netflix Original Series"
-      link="https://www.netflix.com/in/title/80057281"
+      imgsrc={Sdata[2].imgsrc}
+      sname={Sdata[2].sname}
+      title={Sdata[2].title}
+      link={Sdata[2].link}
     />
     <Card
-      imgsrc="https://i.ytimg.com/vi/ulOOON_KYHs/maxresdefault.jpg"
-      sname="1899"
-      title="A netflix Original Series"
-      link="https://www.netflix.com/in/title/80214497"
+      imgsrc={Sdata[3].imgsrc}
+      sname={Sdata[3].sname}
+      title={Sdata[3].title}
+      link={Sdata[3].link}
     />
     <Card
-      imgsrc="https://i.ytimg.com/vi/eNQIlMU8Zkg/maxresdefault.jpg"
-      sname="ALL OF US ARE DEAD"
-      title="A netflix Original Series"
-      link="https://www.netflix.com/in/title/81237994"
+      imgsrc={Sdata[4].imgsrc}
+      sname={Sdata[4].sname}
+      title={Sdata[4].title}
+      link={Sdata[4].link}
     />
+
   </>,
   document.getElementById("root")
 );
