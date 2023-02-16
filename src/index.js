@@ -337,42 +337,48 @@ import Card from "./Cards";
 import Sdata from './Sdata';
 
 // console.log(Sdata[0].imgsrc);
+
+// function ncard(val) {
+//   // console.log(val);
+//   return (
+//     <Card
+//       // className="kuchbhi"
+//       imgsrc={val.imgsrc}
+//       sname={val.sname}
+//       title={val.title}
+//       link={val.link}
+//     />
+//   )
+// }
 ReactDOM.render(
   <>
-    <h1 className='heading_style'>List of Top Netflix Series in 2023</h1>
+    <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
+    {/* {Sdata.map(ncard)} */}
+    {/* {Sdata.map(
+      function ncard(val) {
+        return (
+          <Card
+            imgsrc={val.imgsrc}
+            sname={val.sname}
+            title={val.title}
+            link={val.link}
+          />
+        )
+      })} */}
 
-    <Card
-      // className="kuchbhi"
-      imgsrc={Sdata[0].imgsrc}
-      sname={Sdata[0].sname}
-      title={Sdata[0].title}
-      link={Sdata[0].link}
-    />
-    <Card
-      imgsrc={Sdata[1].imgsrc}
-      sname={Sdata[1].sname}
-      title={Sdata[1].title}
-      link={Sdata[1].link}
-    />
-    <Card
-      imgsrc={Sdata[2].imgsrc}
-      sname={Sdata[2].sname}
-      title={Sdata[2].title}
-      link={Sdata[2].link}
-    />
-    <Card
-      imgsrc={Sdata[3].imgsrc}
-      sname={Sdata[3].sname}
-      title={Sdata[3].title}
-      link={Sdata[3].link}
-    />
-    <Card
-      imgsrc={Sdata[4].imgsrc}
-      sname={Sdata[4].sname}
-      title={Sdata[4].title}
-      link={Sdata[4].link}
-    />
-
+    {/* Fat Arrow Function */}
+    {Sdata.map((val, index, array) => {
+      // console.log(index);
+      // console.log(array);
+      return (
+        <Card
+          imgsrc={val.imgsrc}
+          sname={val.sname}
+          title={val.title}
+          link={val.link}
+        />
+      )
+    })}
   </>,
   document.getElementById("root")
 );
