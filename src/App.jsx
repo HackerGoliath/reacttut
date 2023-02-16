@@ -65,18 +65,40 @@
 
 
 // Challenge-5 Simple Calculator
-import { add, sub, mul, div } from "./Calc"
-function App() {
+// import { add, sub, mul, div } from "./Calc"
+// function App() {
+//     return (
+//         <>
+//             <ol>
+//                 <li>The addition is : {add(40, 4)}</li>
+//                 <li>The subtraction is : {sub(40, 4)}</li>
+//                 <li>The multiplication is : {mul(40, 4)}</li>
+//                 <li>The division is : {div(40, 3)}</li>
+//             </ol>
+//         </>
+//     );
+// }
+
+import Sdata from "./Sdata";
+import Card from "./Cards";
+const App = () => {
     return (
         <>
-            <ol>
-                <li>The addition is : {add(40, 4)}</li>
-                <li>The subtraction is : {sub(40, 4)}</li>
-                <li>The multiplication is : {mul(40, 4)}</li>
-                <li>The division is : {div(40, 3)}</li>
-            </ol>
+            <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
+            {Sdata.map((val, index, array) => {
+                // console.log(index);
+                // console.log(array);
+                return (
+                    <Card
+                        key={val.id}
+                        imgsrc={val.imgsrc}
+                        sname={val.sname}
+                        title={val.title}
+                        link={val.link}
+                    />
+                )
+            })}
         </>
-    );
+    )
 }
-
 export default App;

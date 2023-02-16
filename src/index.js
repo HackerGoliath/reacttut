@@ -7,7 +7,9 @@ https://picsum.photos/
 // import React, { Fragment } from 'react'; // for using JSX we must import react
 import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 // import App from './App';
 // import App from './App';
 import "./index.css";
@@ -333,8 +335,8 @@ import "./index.css";
 // ==============================================
 
 // Netflix App
-import Card from "./Cards";
-import Sdata from './Sdata';
+// import Card from "./Cards";
+// import Sdata from './Sdata';
 
 // console.log(Sdata[0].imgsrc);
 
@@ -350,35 +352,41 @@ import Sdata from './Sdata';
 //     />
 //   )
 // }
-ReactDOM.render(
-  <>
-    <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
-    {/* {Sdata.map(ncard)} */}
-    {/* {Sdata.map(
-      function ncard(val) {
-        return (
-          <Card
-            imgsrc={val.imgsrc}
-            sname={val.sname}
-            title={val.title}
-            link={val.link}
-          />
-        )
-      })} */}
 
-    {/* Fat Arrow Function */}
-    {Sdata.map((val, index, array) => {
-      // console.log(index);
-      // console.log(array);
-      return (
-        <Card
-          imgsrc={val.imgsrc}
-          sname={val.sname}
-          title={val.title}
-          link={val.link}
-        />
-      )
-    })}
-  </>,
-  document.getElementById("root")
+
+// ReactDOM.render(
+//   <>
+//     <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
+/* {Sdata.map(ncard)}
+{Sdata.map(
+  function ncard(val) {
+    return (
+      <Card
+        imgsrc={val.imgsrc}
+        sname={val.sname}
+        title={val.title}
+        link={val.link} 
+      />
+    )
+  })} 
+
+// Fat Arrow Function 
+{Sdata.map((val, index, array) => {
+  // console.log(index);
+  // console.log(array);
+  return (
+    <Card
+      key={val.id}
+      imgsrc={val.imgsrc}
+      sname={val.sname}
+      title={val.title}
+      link={val.link}
+    />
+  )
+})} 
+</>,
+document.getElementById("root")
 );
+*/
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
