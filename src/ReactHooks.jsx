@@ -1,0 +1,34 @@
+import { useState } from "react";
+import "./ReactHooks.css"
+
+// Array Destructuring
+// const name = ["deepak", "Rahul", "Suresh"]
+// const [name1, name2, name3] = name
+// console.log(name1, name2, name3);
+
+
+const ReactHooks = () => {
+    // const state = useState();
+    const [count, setCount] = useState(0);
+    // console.log(count);
+    const IncNum = () => {
+        // setCount(10);
+        setCount(count + 1);
+        // console.log("Button Clicked", count++);
+    }
+
+    const DecNum = () => {
+        setCount(count - 1);
+    }
+    return (
+        <>
+
+            <h1>{count}</h1>
+            <button onClick={DecNum}>Decrement(-)</button>
+            <button onClick={IncNum}>Increment(+)</button>
+
+        </>
+    )
+}
+
+export default ReactHooks;

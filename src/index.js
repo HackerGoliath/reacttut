@@ -10,8 +10,6 @@ import React from 'react'; // for using JSX we must import react
 // import ReactDOM from 'react-dom';
 import ReactDOM from 'react-dom/client';
 // import App from './App';
-// import App from './App';
-// import App from './App';
 // import "./index.css";
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
@@ -388,7 +386,17 @@ import ReactDOM from 'react-dom/client';
 document.getElementById("root")
 );
 */
-import SlotMachineGame from "./Projects/SlotMachineGame/SlotMachineGame";
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// ========================================================
+
+// Project: Slot Machine Game
+// import SlotMachineGame from "./Projects/SlotMachineGame/SlotMachineGame";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App />);
-root.render(<SlotMachineGame />);
+// root.render(<SlotMachineGame />);
+// ================================================================
+
+// React hooks
+import ReactHooks from "./ReactHooks";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<ReactHooks />);
+
