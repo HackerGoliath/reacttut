@@ -9,10 +9,10 @@ import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 // import ReactDOM from 'react-dom';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 // import App from './App';
 // import App from './App';
-import "./index.css";
+// import App from './App';
+// import "./index.css";
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
@@ -388,5 +388,7 @@ import "./index.css";
 document.getElementById("root")
 );
 */
+import SlotMachineGame from "./Projects/SlotMachineGame/SlotMachineGame";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+// root.render(<App />);
+root.render(<SlotMachineGame />);
