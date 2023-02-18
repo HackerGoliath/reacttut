@@ -39,11 +39,18 @@ const ReactHooks = () => {
         newTime = new Date().toLocaleTimeString();
         setCtime(newTime);
     }
+    // return (
+    //     <>
+    //         <h1>{cTime}</h1>
+    //         <button onClick={UpdateTime}>Get Time</button>
+    //     </>
+    // )
+
+    // Digital Clock
+
+    setInterval(UpdateTime, 1000);
     return (
-        <>
-            <h1>{cTime}</h1>
-            <button onClick={UpdateTime}>Get Time</button>
-        </>
+        <h1>{cTime}</h1>
     )
 }
 
