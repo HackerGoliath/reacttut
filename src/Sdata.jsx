@@ -33,7 +33,28 @@ const Sdata = [
         sname: "ALL OF US ARE DEAD",
         title: "A netflix Original Series",
         link: "https://www.netflix.com/in/title/81237994",
-    }
+    },
+    {
+        id: 6,
+        imgsrc: "https://variety.com/wp-content/uploads/2022/10/TCDWATC_ZX006.jpg",
+        sname: "The Watcher",
+        title: "A netflix Original Series",
+        link: "https://www.netflix.com/in/title/81380441",
+    },
+    {
+        id: 7,
+        imgsrc: "https://compote.slate.com/images/d994d34c-0f73-46e7-b69c-56579b64a786.jpeg?crop=1560%2C1040%2Cx0%2Cy0",
+        sname: "The Boys",
+        title: "Amazon Original",
+        link: "https://www.amazon.com/The-Boys-Season-1/dp/B0875THX53",
+    },
+    {
+        id: 8,
+        imgsrc: "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/11/05ad1d12091d3d56332ed6dcbf5d2f3c3a7c084fd47d610f55d2725adbead01b._RI_V_TTW_.jpg?ssl=1&quality=80&w=f",
+        sname: "Mirzapur",
+        title: "Amazon Original",
+        link: "https://www.primevideo.com/detail/Mirzapur/0PDOKMV9CRLOMO5EUKNCUJLG4Q",
+    },
 ];
 
 export default Sdata;

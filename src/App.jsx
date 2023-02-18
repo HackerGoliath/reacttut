@@ -79,25 +79,38 @@
 //     );
 // }
 
-import Sdata from "./Sdata";
-import Card from "./Cards";
+import Netflix from "./Netflix";
+import Amazon from "./Amazon";
+
+const favSeries = "amazon";
+const FavS = () => {
+    if (favSeries === "netflix") {
+        return <Netflix />
+    }
+    else {
+        return <Amazon />
+    }
+}
 const App = () => {
     return (
         <>
             <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
+            {/* 
             {Sdata.map((val, index, array) => {
-                // console.log(index);
-                // console.log(array);
-                return (
-                    <Card
-                        key={val.id}
-                        imgsrc={val.imgsrc}
-                        sname={val.sname}
-                        title={val.title}
-                        link={val.link}
-                    />
-                )
-            })}
+                console.log(index);
+                console.log(array);
+            return (
+            <Card
+                key={val.id}
+                imgsrc={val.imgsrc}
+                sname={val.sname}
+                title={val.title}
+                link={val.link}
+            />
+             })}
+            */}
+
+            <FavS />
         </>
     )
 }
