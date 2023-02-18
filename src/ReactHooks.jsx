@@ -9,24 +9,40 @@ import "./ReactHooks.css"
 
 const ReactHooks = () => {
     // const state = useState();
-    const [count, setCount] = useState(0);
+    // const [count, setCount] = useState(0);
     // console.log(count);
-    const IncNum = () => {
-        // setCount(10);
-        setCount(count + 1);
-        // console.log("Button Clicked", count++);
-    }
+    // const IncNum = () => {
+    //     // setCount(10);
+    //     setCount(count + 1);
+    //     // console.log("Button Clicked", count++);
+    // }
 
-    const DecNum = () => {
-        setCount(count - 1);
+    // const DecNum = () => {
+    //     setCount(count - 1);
+    // }
+    // return (
+    //     <>
+
+    //         <h1>{count}</h1>
+    //         {/* <button onClick={DecNum}>Decrement(-)</button>
+    //         <button onClick={IncNum}>Increment(+)</button> */}
+    //         <button onClick={IncNum}>Increment(+)</button>
+
+    //     </>
+    // )
+
+    // Challeng 6 : Get time 
+    let newTime = new Date().toLocaleTimeString();
+    const [cTime, setCtime] = useState(newTime)
+
+    const UpdateTime = () => {
+        newTime = new Date().toLocaleTimeString();
+        setCtime(newTime);
     }
     return (
         <>
-
-            <h1>{count}</h1>
-            <button onClick={DecNum}>Decrement(-)</button>
-            <button onClick={IncNum}>Increment(+)</button>
-
+            <h1>{cTime}</h1>
+            <button onClick={UpdateTime}>Get Time</button>
         </>
     )
 }
