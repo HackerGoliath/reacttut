@@ -396,7 +396,12 @@ document.getElementById("root")
 // ================================================================
 
 // React hooks
-import ReactHooks from "./ReactHooks";
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<ReactHooks />);
+// import ReactHooks from "./ReactHooks";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<ReactHooks />);
 
+
+// Handling Events
+import Events from './Events';
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Events />);
