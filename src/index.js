@@ -415,3 +415,35 @@ root.render(
     <App />
   </React.StrictMode>
 );
+/* Spread Operator */
+// 1st Case:
+// const myName = ["Deepak", "Bhai"];
+// const bioData = [1, ...myName, 26, "male"];
+// console.log(myName, bioData);
+
+// 2nd Case:
+// const shooterGame = ["IGI", "Far Cry", "Resident Evil"];
+// const racingGame = ["Ashphalt", "NFS", "Fast Five"];
+// const game = [...shooterGame, ...racingGame];
+// console.log(game);
+
+// 3rd Case:
+// const shooterGame = ["IGI", "Far Cry", "Resident Evil"];
+// const [first, ...remaining] = shooterGame;
+// console.log(first);
+// console.log(remaining);
+
+// Spread Operator In Objects
+// const fullName = {
+//   fname: "Deepak",
+//   lname: "Bhai"
+// }
+
+// const bioData = {
+//   id: 1,
+//   ...fullName,
+//   age: 26,
+//   gender: "male"
+// }
+// console.log(fullName);
+// console.log(bioData);

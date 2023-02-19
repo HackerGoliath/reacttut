@@ -52,42 +52,79 @@ const App = () => {
     // )
     // ============================================================================
 
+
+
     // Multiple Inputs
     const [fullName, setFullName] = useState({
         fname: "",
         lname: "",
-        email: ""
+        email: "",
+        phone: "",
+        qualification: ""
     });
     const handleChange = (e) => {
         // console.log(e.target.value);
         // console.log(e.target.name);
         // console.log(e.target.placeholder);
 
-        const value = e.target.value;
-        const name = e.target.name;
+        // const value = e.target.value;
+        // const name = e.target.name;
 
+        const { name, value } = e.target;
         setFullName((prevValue) => {
             // console.log(prevValue);
-            if (name === "fName") {
-                return {
-                    fname: value,
-                    lname: prevValue.lname,
-                    email: prevValue.email
-                }
-            }
-            else if (name === "lName") {
-                return {
-                    fname: prevValue.fname,
-                    lname: value,
-                    email: prevValue.email
-                }
-            }
-            else if (name === "eMail") {
-                return {
-                    fname: prevValue.fname,
-                    lname: prevValue.lname,
-                    email: value
-                }
+            //         if (name === "fName") {
+            //             return {
+            //                 fname: value,
+            //                 lname: prevValue.lname,
+            //                 email: prevValue.email,
+            //                 phone: prevValue.phone,
+            //             }
+            //         }
+            //         else if (name === "lName") {
+            //             return {
+            //                 fname: prevValue.fname,
+            //                 lname: value,
+            //                 email: prevValue.email,
+            //                 phone: prevValue.phone
+            //             }
+            //         }
+            //         else if (name === "eMail") {
+            //             return {
+            //                 fname: prevValue.fname,
+            //                 lname: prevValue.lname,
+            //                 email: value,
+            //                 phone: prevValue.phone,
+            //             }
+            //         }
+            //         else if (name === "phoneN") {
+            //             return {
+            //                 fname: prevValue.fname,
+            //                 lname: prevValue.lname,
+            //                 email: prevValue.email,
+            //                 phone: value,
+            //             }
+            //         }
+
+
+            // Set fields with spread operator(...)
+            // if (name === "fName") {
+            //     return { ...fullName, fname: value }
+            // }
+            // else if (name === "lName") {
+            //     return { ...fullName, lname: value }
+            // }
+            // else if (name === "eMail") {
+            //     return { ...fullName, email: value }
+            // }
+            // else if (name === "phoneN") {
+            //     return { ...fullName, phone: value }
+            // }
+
+            // Another method by using spread operator
+            return {
+                ...prevValue,
+                [name]: value
             }
         })
     }
@@ -104,12 +141,18 @@ const App = () => {
                 <form action="/" onSubmit={handleSubmit}>
                     <div>
                         <h1>Hello {fullName.fname} {fullName.lname}</h1>
-                        <p>Email: {fullName.email}</p>
-                        <input type="text" name="fName" value={fullName.fname} onChange={handleChange} placeholder="Enter your first name" />
+                        <p>{fullName.email}</p>
+                        <p>{fullName.phone}</p>
+                        <p>{fullName.qualification}</p>
+                        <input type="text" name="fname" value={fullName.fname} onChange={handleChange} placeholder="Enter your first name" />
                         <br />
-                        <input type="text" name="lName" value={fullName.lname} onChange={handleChange} placeholder="Enter your last name" />
+                        <input type="text" name="lname" value={fullName.lname} onChange={handleChange} placeholder="Enter your last name" />
                         <br />
-                        <input type="email" name="eMail" value={fullName.email} onChange={handleChange} placeholder="Enter your email" />
+                        <input type="email" name="email" value={fullName.email} onChange={handleChange} placeholder="Enter your email" />
+                        <br />
+                        <input type="tel" name="phone" value={fullName.phone} onChange={handleChange} placeholder="Enter your phone number" />
+                        <br />
+                        <input type="text" name="qualification" value={fullName.qualification} onChange={handleChange} placeholder="Enter your qualification" />
                         <button type="submit">Click Me</button>
                     </div>
                 </form>
