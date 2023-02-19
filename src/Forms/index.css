@@ -23,8 +23,9 @@ h1{
     background: transparent;
     text-shadow: 0 2px 2px black;
 }
+
 input{
-    width: 50%;
+    width: 100%;
     padding: 10px 20px;
     border: none;
     outline: none;
