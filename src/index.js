@@ -408,13 +408,13 @@ document.getElementById("root")
 // ====================================================================
 
 // Forms
-import App from "./Forms/App"
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// import App from "./Forms/App"
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 /* Spread Operator */
 // 1st Case:
 // const myName = ["Deepak", "Bhai"];
@@ -447,3 +447,14 @@ root.render(
 // }
 // console.log(fullName);
 // console.log(bioData);
+
+
+// Project 2: ToDo List
+import App from "./Projects/ToDoList/App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
