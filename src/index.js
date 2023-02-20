@@ -450,11 +450,21 @@ document.getElementById("root")
 
 
 // Project 2: ToDo List
-import App from "./Projects/ToDoList/App";
+// import App from "./Projects/ToDoList/App";
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+// Challenge 8 : Increment Decrement
+import ReactHooks from './ReactHooks';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ReactHooks />
   </React.StrictMode>
 );

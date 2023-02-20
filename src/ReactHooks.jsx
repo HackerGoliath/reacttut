@@ -1,5 +1,10 @@
 import { useState } from "react";
-import "./ReactHooks.css"
+import "./ReactHooks.css";
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+
 
 // Array Destructuring
 // const name = ["deepak", "Rahul", "Suresh"]
@@ -32,13 +37,13 @@ const ReactHooks = () => {
     // )
 
     // Challeng 6 : Get time 
-    let newTime = new Date().toLocaleTimeString();
-    const [cTime, setCtime] = useState(newTime)
+    // let newTime = new Date().toLocaleTimeString();
+    // const [cTime, setCtime] = useState(newTime)
 
-    const UpdateTime = () => {
-        newTime = new Date().toLocaleTimeString();
-        setCtime(newTime);
-    }
+    // const UpdateTime = () => {
+    //     newTime = new Date().toLocaleTimeString();
+    //     setCtime(newTime);
+    // }
     // return (
     //     <>
     //         <h1>{cTime}</h1>
@@ -48,9 +53,37 @@ const ReactHooks = () => {
 
     // Digital Clock
 
-    setInterval(UpdateTime, 1000);
+    // setInterval(UpdateTime, 1000);
+    // return (
+    //     <h1>{cTime}</h1>
+    // )
+
+
+    // Challenge 8 : Increment Decrement
+    const [value, setValue] = useState(0);
+
+    const decValue = () => {
+        if (value > 0) {
+            setValue(value - 1);
+        }
+        else {
+            alert("Limit reached");
+            setValue(0);
+        }
+    }
+
+    const incValue = () => {
+        setValue(value + 1)
+    }
+
     return (
-        <h1>{cTime}</h1>
+        <>
+            <div className="main_div">
+                <h1>{value}</h1>
+                <Tooltip title="subtract"><Button className="btn_red" onClick={decValue}><RemoveIcon /></Button></Tooltip>
+                <Tooltip title="add"><Button className="btn_green" onClick={incValue}><AddIcon /></Button></Tooltip>
+            </div>
+        </>
     )
 }
 
