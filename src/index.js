@@ -481,10 +481,19 @@ document.getElementById("root")
 // ===================================================
 
 // importing bootstrap
-import App from "./App"
+// import App from "./App"
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// )
+
+// Project: Create Accordian
+import Accordian from "./Projects/Create Accordian/Accordian";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Accordian />
   </React.StrictMode>
 ) 
