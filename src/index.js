@@ -470,11 +470,21 @@ document.getElementById("root")
 // );
 
 // Project: ToDoList With Material UI
-import ToDoListMui from './Projects/ToDoListMui/ToDoListMui';
+// import ToDoListMui from './Projects/ToDoListMui/ToDoListMui';
 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <ToDoListMui />
+//   </React.StrictMode>
+// ) 
+// ===================================================
+
+// importing bootstrap
+import App from "./App"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ToDoListMui />
+    <App />
   </React.StrictMode>
 ) 

@@ -79,10 +79,10 @@
 //     );
 // }
 
-import Netflix from "./Netflix";
-import Amazon from "./Amazon";
+// import Netflix from "./Netflix";
+// import Amazon from "./Amazon";
 
-const favSeries = "netflix";
+// const favSeries = "netflix";
 // const FavS = () => {
 //     if (favSeries === "netflix") {
 //         return <Netflix />
@@ -92,28 +92,40 @@ const favSeries = "netflix";
 //     }
 // }
 
+// importing bootstrap
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 const App = () => {
+    //     return (
+    //         <>
+    //             <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
+
+    //             {Sdata.map((val, index, array) => {
+    //                 console.log(index);
+    //                 console.log(array);
+    //                 return (
+    //                     <Card
+    //                         key={val.id}
+    //                         imgsrc={val.imgsrc}
+    //                         sname={val.sname}
+    //                         title={val.title}
+    //                         link={val.link}
+    //                     />
+    //                 )
+    //             })
+    //         }
+
+    //             <FavS />
+    //             {(favSeries === "netflix") ? <Netflix /> : <Amazon />}
+    //         </>
+    //     )
+    // =====================================================================
+
+    //  importing bootstrap 
+    // import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
     return (
         <>
-            <h1 className='heading_style'>List of Top 5 Netflix Series in 2023</h1>
-            {/* 
-            {Sdata.map((val, index, array) => {
-                console.log(index);
-                console.log(array);
-            return (
-            <Card
-                key={val.id}
-                imgsrc={val.imgsrc}
-                sname={val.sname}
-                title={val.title}
-                link={val.link}
-            />
-             })}
-            */}
-
-            {/* <FavS /> */}
-
-            {(favSeries === "netflix") ? <Netflix /> : <Amazon />}
+            <h1 className="text-center text-capitalize text-danger">This is Home Page</h1>
+            <button className="btn btn-success">Bootstrap button</button>
         </>
     )
 }
