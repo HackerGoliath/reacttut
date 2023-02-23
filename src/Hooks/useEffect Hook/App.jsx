@@ -7,8 +7,11 @@ const App = () => {
     // useEffect always expect a function
     // [] is used when you want to run useEffect first time when the page is rendered
     useEffect(() => {
-        alert("You Clicked");
-        console.log("You Clicked");
+        // alert("You Clicked");
+        // console.log("You Clicked");
+
+        // Challenge 7
+        document.title = `You Clicked ${num} times`;
     }, [num])
 
     return (

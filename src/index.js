@@ -538,7 +538,11 @@ document.getElementById("root")
 
 
 // UseEffect Hook
-import App from "./Hooks/useEffect Hook/App";
+// import App from "./Hooks/useEffect Hook/App";
+
+
+// Project Live Covid Tracker
+import App from './Projects/LiveCovidTracker/App';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
