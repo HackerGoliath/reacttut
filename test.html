@@ -28,11 +28,123 @@
             background-color: green;
             border: 2px solid yellow;
         }
+
+        /* .zoom {
+            animation: zoom 5s ease-in-out infinite;
+            background-color: brown;
+            text-align: center;
+            height: 30%;
+            width: 30%;
+            margin: auto;
+            add animation to the element 
+        }
+
+        .rotate {
+            transform-origin: top left;
+            set the origin of the transformation
+            transform: rotate(45deg);
+            add the rotation to the element
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+                set the initial scale factor
+            }
+
+            50% {
+                transform: scale(1.5);
+                set the zoom scale factor
+            }
+
+            100% {
+                transform: scale(1);
+                set the final scale factor 
+            }
+        }
+
+        .circular-rotate {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            make the element circular 
+            border: 5px solid #000;
+            animation: circular-rotate 2s linear infinite;
+         add the animation to the element 
+        }
+
+        @keyframes circular-rotate {
+            0% {
+                transform: rotate(0deg);
+                set the initial rotation 
+            }
+
+            100% {
+                transform: rotate(360deg);
+                set the final rotation 
+            }
+        } */
+
+
+        /* Vibrate image effect */
+        @keyframes vibrate {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            10% {
+                transform: translate(-5px, -5px);
+            }
+
+            20% {
+                transform: translate(5px, -5px);
+            }
+
+            30% {
+                transform: translate(-5px, 5px);
+            }
+
+            40% {
+                transform: translate(5px, 5px);
+            }
+
+            50% {
+                transform: translate(-5px, -5px);
+            }
+
+            60% {
+                transform: translate(5px, -5px);
+            }
+
+            70% {
+                transform: translate(-5px, 5px);
+            }
+
+            80% {
+                transform: translate(5px, 5px);
+            }
+
+            90% {
+                transform: translate(-5px, -5px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        img {
+            animation: vibrate 1s ease-in-out infinite;
+        }
     </style>
 </head>
 <body>
     <div class="main_div">
-        <div class="center_div"></div>
+        <div class="center_div">
+            <!-- <div class="zoom rotate">Zoom effect</div> -->
+            <div class="zoom rotate"><img src="https://picsum.photos/100/100" alt=""></div>
+            <div class="circular-rotate"><img src="https://picsum.photos/100/150" alt=""></div>
+        </div>
     </div>
 </body>
 </html>

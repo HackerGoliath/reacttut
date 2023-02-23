@@ -12,6 +12,15 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 // import "./index.css";
 
+// My Practice
+import App from "./Projects/Practice/App";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
 
@@ -363,12 +372,12 @@ import ReactDOM from 'react-dom/client';
         imgsrc={val.imgsrc}
         sname={val.sname}
         title={val.title}
-        link={val.link} 
+        link={val.link}
       />
     )
-  })} 
+  })}
 
-// Fat Arrow Function 
+// Fat Arrow Function
 {Sdata.map((val, index, array) => {
   // console.log(index);
   // console.log(array);
@@ -381,7 +390,7 @@ import ReactDOM from 'react-dom/client';
       link={val.link}
     />
   )
-})} 
+})}
 </>,
 document.getElementById("root")
 );
@@ -490,10 +499,28 @@ document.getElementById("root")
 // )
 
 // Project: Create Accordian
-import Accordian from "./Projects/Create Accordian/Accordian";
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Accordian />
-  </React.StrictMode>
-) 
+// import Accordian from "./Projects/Create Accordian/Accordian";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <Accordian />
+//   </React.StrictMode>
+// ) 
+
+// Project: Create Website in 1 min using Bootstrap
+// import App from "./Projects/BootstrapWeb1min/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+// Project: Google Keep Clone App
+// import App from "./Projects/GoogleKeepClone/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// )
