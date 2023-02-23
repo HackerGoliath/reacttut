@@ -527,7 +527,18 @@ document.getElementById("root")
 // ============================================================================
 
 // Context API
-import App from "./Context React Hook/App";
+// import App from "./Context React Hook/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// )
+// ===============================================================
+
+
+// UseEffect Hook
+import App from "./Hooks/useEffect Hook/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
