@@ -13,13 +13,13 @@ import ReactDOM from 'react-dom/client';
 // import "./index.css";
 
 // My Practice
-import App from "./Projects/Practice/App";
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+// import App from "./Projects/Practice/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// )
 
 // ReactDOM.render('kya dikhana hai', 'kaha dikhana hai', 'callback fun');
 // ReactDOM.render('what to show', 'where to show', 'callback fun');
@@ -524,3 +524,13 @@ document.getElementById("root")
 //     <App />
 //   </React.StrictMode>
 // )
+// ============================================================================
+
+// Context API
+import App from "./Context React Hook/App";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)

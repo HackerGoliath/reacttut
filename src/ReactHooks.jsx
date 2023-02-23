@@ -1,11 +1,11 @@
-import { useState } from "react";
 import "./ReactHooks.css";
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import Clock from 'react-live-clock';
-import Countdown from 'react-countdown';
+// import { useState } from "react";
+// import AddIcon from '@mui/icons-material/Add';
+// import RemoveIcon from '@mui/icons-material/Remove';
+// import Button from '@mui/material/Button';
+// import Tooltip from '@mui/material/Tooltip';
+// import Clock from 'react-live-clock';
+// import Countdown from 'react-countdown';
 
 
 // Array Destructuring
@@ -62,33 +62,33 @@ const ReactHooks = () => {
 
 
     // Challenge 8 : Increment Decrement
-    const [value, setValue] = useState(0);
+    // const [value, setValue] = useState(0);
 
-    const decValue = () => {
-        if (value > 0) {
-            setValue(value - 1);
-        }
-        else {
-            alert("Limit reached");
-            setValue(0);
-        }
-    }
+    // const decValue = () => {
+    //     if (value > 0) {
+    //         setValue(value - 1);
+    //     }
+    //     else {
+    //         alert("Limit reached");
+    //         setValue(0);
+    //     }
+    // }
 
-    const incValue = () => {
-        setValue(value + 1)
-    }
+    // const incValue = () => {
+    //     setValue(value + 1)
+    // }
 
-    return (
-        <>
-            <div className="main_div">
-                <Countdown date={Date.now() + 10000} />
-                <Clock format={'HH:mm:ss'} ticking={true} timezone={'IN/Pacific'} />
-                <h1>{value}</h1>
-                <Tooltip title="subtract"><Button className="btn_red" onClick={decValue}><RemoveIcon /></Button></Tooltip>
-                <Tooltip title="add"><Button className="btn_green" onClick={incValue}><AddIcon /></Button></Tooltip>
-            </div>
-        </>
-    )
+    // return (
+    //     <>
+    //         <div className="main_div">
+    //             <Countdown date={Date.now() + 10000} />
+    //             <Clock format={'HH:mm:ss'} ticking={true} timezone={'IN/Pacific'} />
+    //             <h1>{value}</h1>
+    //             <Tooltip title="subtract"><Button className="btn_red" onClick={decValue}><RemoveIcon /></Button></Tooltip>
+    //             <Tooltip title="add"><Button className="btn_green" onClick={incValue}><AddIcon /></Button></Tooltip>
+    //         </div>
+    //     </>
+    // )
 }
 
 export default ReactHooks;
