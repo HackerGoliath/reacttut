@@ -9,6 +9,7 @@ const Menu = () => {
                 {/* <h1>React Navbar</h1> */}
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/service">Service</NavLink>
+                <NavLink to="/user/deepak/bhai">User</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
                 {/* <h1>Normal Navbar</h1>
                 <a href="/about">About</a>
