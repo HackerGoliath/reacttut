@@ -542,7 +542,16 @@ document.getElementById("root")
 
 
 // Project Live Covid Tracker
-import App from './Projects/LiveCovidTracker/App';
+// import App from './Projects/LiveCovidTracker/App';
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// )
+
+// Project: Get Pokemon with the help of Axios
+import App from "./Projects/AxiosGetPokemon/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
