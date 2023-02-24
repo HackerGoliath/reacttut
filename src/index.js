@@ -549,12 +549,26 @@ document.getElementById("root")
 //     <App />
 //   </React.StrictMode>
 // )
+// ========================================================================
 
 // Project: Get Pokemon with the help of Axios
-import App from "./Projects/AxiosGetPokemon/App";
+// import App from "./Projects/AxiosGetPokemon/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// )
+// ============================================================================
+
+// React Router DOM Starts
+import App from "./React Router DOM/App";
+import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
-)
+);
