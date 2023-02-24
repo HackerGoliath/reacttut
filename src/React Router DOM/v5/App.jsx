@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
+import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Service from './Service';
@@ -16,6 +17,7 @@ const App = () => {
         <>
             <Menu />
             <Routes>
+                <Route path='/' element={<Home name="Home" />} />
                 <Route path='/about' element={<About name="About" />} />
                 <Route path='/service' element={<Service name="Service" />} />
                 <Route path='/contact' element={<Contact name="Contact" />} />
