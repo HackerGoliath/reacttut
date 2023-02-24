@@ -1,11 +1,12 @@
 import React from 'react'
-import "./index.css";
-import Covid from './components/Covid';
+// import Covid from './components/Covid';
+import StateWise from './components/stateWiseData/StateWise';
 
 const App = () => {
     return (
         <>
-            <Covid />
+            {/* <Covid /> */}
+            <StateWise />
         </>
     )
 }

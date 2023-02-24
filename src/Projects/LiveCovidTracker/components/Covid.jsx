@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import "./Covid.css";
 
 const Covid = () => {
     const [data, setData] = useState([])
