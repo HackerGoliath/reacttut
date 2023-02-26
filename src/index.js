@@ -588,7 +588,17 @@ document.getElementById("root")
 // =========================================================
 
 // Project: Live Weather App
-import App from "./Projects/TempApp/App";
+// import App from "./Projects/TempApp/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// =================================================================
+
+// Project: Advanced ToDo app
+import App from "./Projects/ToDoApp/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
