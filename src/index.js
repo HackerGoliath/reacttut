@@ -562,7 +562,20 @@ document.getElementById("root")
 // ============================================================================
 
 // React Router DOM Starts
-import App from "./React Router DOM/v5/App";
+// import App from "./React Router DOM/v5/App";
+// import { BrowserRouter } from "react-router-dom";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </React.StrictMode>
+// );
+// ===========================================================================
+
+// Project: Bootstrap Animated Website
+import App from "./Projects/BootstrapAnimatedWebsite/App";
 import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

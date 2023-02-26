@@ -1,5 +1,7 @@
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+{/* for left navbar <ul className="navbar-nav ms-auto mb-2 mb-lg-0"> */ }
+
 const App = () => {
     return (
         <>

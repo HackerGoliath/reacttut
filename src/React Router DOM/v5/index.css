@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
 }
 a{
     color: #61dafb;
@@ -19,3 +23,18 @@ a.active{
     display: flex;
     justify-content: space-around;
 }
+
+.searchbar{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.searchbar input{
+    margin: 30px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+}
+

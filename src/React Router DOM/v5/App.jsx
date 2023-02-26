@@ -7,6 +7,7 @@ import Service from './Service';
 import Error from './Error';
 import Menu from './Menu';
 import User from './User';
+import Search from './Search';
 import "./index.css";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                 <Route path='/' element={<Home name="Home" />} />
                 <Route path='/about' element={<About name="About" />} />
                 <Route path='/service' element={<Service name="Service" />} />
+                <Route path='/search' element={<Search />} />
                 <Route path='/contact' element={<Contact name="Contact" />} />
                 <Route path='/user/:fname/:lname' element={<User />} />
                 <Route path='/contact/name' element={<Name />} />
