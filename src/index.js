@@ -575,13 +575,23 @@ document.getElementById("root")
 // ===========================================================================
 
 // Project: Bootstrap Animated Website
-import App from "./Projects/BootstrapAnimatedWebsite/App";
-import { BrowserRouter } from "react-router-dom";
+// import App from "./Projects/BootstrapAnimatedWebsite/App";
+// import { BrowserRouter } from "react-router-dom";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </React.StrictMode>
+// );
+// =========================================================
+
+// Project: Live Weather App
+import App from "./Projects/TempApp/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
