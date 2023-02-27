@@ -598,7 +598,17 @@ document.getElementById("root")
 // =================================================================
 
 // Project: Advanced ToDo app
-import App from "./Projects/ToDoApp/App";
+// import App from "./Projects/ToDoApp/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// ==================================================================================
+
+// Project: Portfolio Filter Image Gallery
+import App from "./Projects/PortfolioFilterImageGallery/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
