@@ -608,10 +608,36 @@ document.getElementById("root")
 // ==================================================================================
 
 // Project: Portfolio Filter Image Gallery
-import App from "./Projects/PortfolioFilterImageGallery/App";
+// import App from "./Projects/PortfolioFilterImageGallery/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// ==========================================================================
+
+// Project: Responsive Navbar with react-icons
+// import App from "./Projects/ResponsiveNavbar/App";
+// import { BrowserRouter } from "react-router-dom";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <BrowserRouter>
+//     <React.StrictMode>
+//       <App />
+//     </React.StrictMode>
+//   </BrowserRouter>
+// );
+// ============================================================
+
+// React Router Dom v6
+import App from "./React Router DOM/v6/App";
+import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 );
