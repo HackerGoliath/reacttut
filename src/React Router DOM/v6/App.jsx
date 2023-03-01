@@ -11,7 +11,6 @@ const App = () => {
     return (
         <>
             <BrowserRouter>
-                <Navbar />
                 <Routes>
                     {/* <Route path='/' element={<div>Home Page</div>} />
                     <Route path='about' element={<div>About Page</div>} />
@@ -29,8 +28,9 @@ const App = () => {
                         <Route path='*' element={<Error />} />
                     </Route> */}
 
-                    {/* Shared Layout */}
-                    <Route path='/' element={<Home />} >
+                    {/* Nested + Shared Layout */}
+                    <Route path='/' element={<Navbar />} >
+                        <Route path='/' element={<Home />} />
                         <Route path='about' element={<About />} />
                         <Route path='contact' element={<Contact />} />
                         <Route path='*' element={<Error />} />
