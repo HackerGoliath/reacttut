@@ -631,7 +631,27 @@ document.getElementById("root")
 // ============================================================
 
 // React Router Dom v6
-import App from "./React Router DOM/v6/App";
+// import App from "./React Router DOM/v6/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// ====================================================================
+
+// Axios Ttorial
+// import App from "./Axios/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// ===========================================================================
+
+// Hooks New Tutorial
+import App from "./Hooks/new/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
