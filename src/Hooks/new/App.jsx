@@ -1,11 +1,12 @@
 import React from 'react'
 import "./App.css";
-import Parent from './components/useContext/Parent';
+import ReducerHook from './components/useReducer/ReducerHook';
 import "./index.css";
 // import UseState from './components/useState/UseState'
 // import UseStateObject from './components/useState/UseStateObject'
 // import UseEffect from './components/useEffect/UseEffect';
 // import ClearUp from './components/useEffect/ClearUp';
+// import Parent from './components/useContext/Parent';
 
 
 const App = () => {
@@ -24,7 +25,10 @@ const App = () => {
             {/* <Parent user={userData} /> */}
 
             {/* With useContext Hook */}
-            <Parent />
+            {/* <Parent /> */}
+
+            {/* useReducer Hook */}
+            <ReducerHook />
         </>
     )
 }
