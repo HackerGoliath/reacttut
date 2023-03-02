@@ -1,12 +1,14 @@
 import React from 'react'
 import "./App.css";
-import ReducerHook from './components/useReducer/ReducerHook';
 import "./index.css";
 // import UseState from './components/useState/UseState'
 // import UseStateObject from './components/useState/UseStateObject'
 // import UseEffect from './components/useEffect/UseEffect';
 // import ClearUp from './components/useEffect/ClearUp';
 // import Parent from './components/useContext/Parent';
+// import ReducerHook from './components/useReducer/ReducerHook';
+// import RefHook1 from './components/useRef/RefHook1';
+import RefHook2 from './components/useRef/RefHook2';
 
 
 const App = () => {
@@ -28,7 +30,12 @@ const App = () => {
             {/* <Parent /> */}
 
             {/* useReducer Hook */}
-            <ReducerHook />
+            {/* <ReducerHook /> */}
+
+            {/* useRef Hook */}
+            {/* <RefHook1 /> */}
+            {/* Accessing DOM element */}
+            <RefHook2 />
         </>
     )
 }
