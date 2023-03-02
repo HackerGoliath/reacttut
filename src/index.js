@@ -653,10 +653,21 @@ document.getElementById("root")
 // ===========================================================================
 
 // Hooks New Tutorial
+// import App from "./Hooks/new/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+// useContext
 import App from "./Hooks/new/App";
+import { AppProvider } from './Hooks/new/components/useContext/UserContext';
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <AppProvider>
     <App />
-  </React.StrictMode>
+  </AppProvider>
 );
