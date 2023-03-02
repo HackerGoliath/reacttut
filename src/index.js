@@ -9,6 +9,8 @@ import React from 'react'; // for using JSX we must import react
 // var ReactDOM = require('react-dom'); // use for working with DOM and using render method
 // import ReactDOM from 'react-dom';
 import ReactDOM from 'react-dom/client';
+// Bootstrap
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // import App from './App';
 // import "./index.css";
 
