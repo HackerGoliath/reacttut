@@ -8,7 +8,8 @@ import "./index.css";
 // import Parent from './components/useContext/Parent';
 // import ReducerHook from './components/useReducer/ReducerHook';
 // import RefHook1 from './components/useRef/RefHook1';
-import RefHook2 from './components/useRef/RefHook2';
+// import RefHook2 from './components/useRef/RefHook2';
+import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
 
 
 const App = () => {
@@ -35,7 +36,9 @@ const App = () => {
             {/* useRef Hook */}
             {/* <RefHook1 /> */}
             {/* Accessing DOM element */}
-            <RefHook2 />
+            {/* <RefHook2 /> */}
+
+            <LayoutEffect />
         </>
     )
 }
