@@ -11,6 +11,7 @@ import React from 'react'; // for using JSX we must import react
 import ReactDOM from 'react-dom/client';
 // Bootstrap
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 // import App from './App';
 // import "./index.css";
 
@@ -652,7 +653,7 @@ document.getElementById("root")
 // );
 // ===========================================================================
 
-// Hooks New Tutorial
+// Hooks In One Video Tutorial
 // import App from "./Hooks/new/App";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -672,7 +673,17 @@ document.getElementById("root")
 //   </AppProvider>
 // );
 
-import App from "./Hooks/In One Video/App";
+// import App from "./Hooks/In One Video/App";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// =======================================================
+
+// Hooks New video playlist
+import App from "./Hooks/new/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

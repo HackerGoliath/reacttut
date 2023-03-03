@@ -11,7 +11,8 @@ import "./index.css";
 // import RefHook2 from './components/useRef/RefHook2';
 // import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
 // import MemoHook from './components/useMemo/MemoHook';
-import CallbackHook from './components/useCallback/CallbackHook';
+// import CallbackHook from './components/useCallback/CallbackHook';
+import Parent from './components/customHook/Parent';
 
 const App = () => {
     /* Without useContext Hook */
@@ -45,8 +46,11 @@ const App = () => {
             {/* useMemo */}
             {/* 7.<MemoHook /> */}
 
-            {/* useCallback Hook */}
-            <CallbackHook />
+            {/* 8.useCallback Hook */}
+            {/* <CallbackHook /> */}
+
+            {/* 9.Custom Hook */}
+            <Parent />
         </>
     )
 }
