@@ -9,8 +9,9 @@ import "./index.css";
 // import ReducerHook from './components/useReducer/ReducerHook';
 // import RefHook1 from './components/useRef/RefHook1';
 // import RefHook2 from './components/useRef/RefHook2';
-import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
-
+// import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
+// import MemoHook from './components/useMemo/MemoHook';
+import CallbackHook from './components/useCallback/CallbackHook';
 
 const App = () => {
     /* Without useContext Hook */
@@ -20,25 +21,32 @@ const App = () => {
     // };
     return (
         <>
-            {/* <UseStateObject /> */}
-            {/* <UseEffect /> */}
-            {/* <ClearUp /> */}
+            {/* 1.<UseStateObject /> */}
+            {/* 2.1<UseEffect /> */}
+            {/* 2.2<ClearUp /> */}
 
             {/* Without useContext Hook */}
-            {/* <Parent user={userData} /> */}
+            {/* 3.1<Parent user={userData} /> */}
 
             {/* With useContext Hook */}
-            {/* <Parent /> */}
+            {/* 3.2<Parent /> */}
 
             {/* useReducer Hook */}
-            {/* <ReducerHook /> */}
+            {/* 4.<ReducerHook /> */}
 
             {/* useRef Hook */}
-            {/* <RefHook1 /> */}
+            {/* 5.1<RefHook1 /> */}
             {/* Accessing DOM element */}
-            {/* <RefHook2 /> */}
+            {/* 5.2<RefHook2 /> */}
 
-            <LayoutEffect />
+            {/* useLayoutEffect */}
+            {/* 6.<LayoutEffect /> */}
+
+            {/* useMemo */}
+            {/* 7.<MemoHook /> */}
+
+            {/* useCallback Hook */}
+            <CallbackHook />
         </>
     )
 }

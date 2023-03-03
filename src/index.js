@@ -662,12 +662,20 @@ document.getElementById("root")
 // );
 
 // useContext
-import App from "./Hooks/new/App";
-import { AppProvider } from './Hooks/new/components/useContext/UserContext';
+// import App from "./Hooks/new/App";
+// import { AppProvider } from './Hooks/new/components/useContext/UserContext';
 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <AppProvider>
+//     <App />
+//   </AppProvider>
+// );
+
+import App from "./Hooks/In One Video/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <AppProvider>
+  <React.StrictMode>
     <App />
-  </AppProvider>
+  </React.StrictMode>
 );
