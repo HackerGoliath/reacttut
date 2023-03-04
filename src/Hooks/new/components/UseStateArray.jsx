@@ -14,13 +14,27 @@ const UseStateArray = () => {
     ]
     // console.log(bioData);
     const [myArray, setMyArray] = useState(bioData);
+
     const clearArray = () => {
         setMyArray([]);
     }
+
+    const removeElem = (id) => {
+        // alert(id)
+        const myNewArray = myArray.filter((prevVal) => {
+            // console.log(prevVal);
+            return prevVal.id !== id
+        })
+        setMyArray(myNewArray)
+    }
+
     return (
         <div>
             {
-                myArray.map((currElem, ind) => <h1 key={ind} className="h1Style shadow-lg m-3">Name : {currElem.name} and age : {currElem.age}</h1>
+                myArray.map((currElem) => <h1 key={currElem.id} className="h1Style shadow-lg m-3 p-3">Name :
+                    {currElem.name} and age : {currElem.age}
+                    <button className='mx-3 btn btn-danger' onClick={() => removeElem(currElem.id)}>remove</button>
+                </h1>
                     // console.log(currElem);
                 )
             }
