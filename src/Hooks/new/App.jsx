@@ -8,13 +8,28 @@ const App = () => {
     // let val = "deepak technical subs"
 
     const [myName, setMyName] = useState("Patakha Singh")
-    const [toggleVal, setToggleVal] = useState(true)
-    const changeName = () => {
-        // val = "deepak bhai"
-        // console.log(val);
-        setMyName("Deepak Junglee")
-    }
+    // const [toggleVal, setToggleVal] = useState(true)
+
+    // const changeName = () => {
+    //     // val = "deepak bhai"
+    //     // console.log(val);
+
+    //     if (toggleVal) {
+    //         setMyName("Deepak Junglee")
+    //         setToggleVal(!toggleVal)
+    //     }
+    //     else {
+    //         setMyName("Patakha Singh")
+    //         setToggleVal(!toggleVal)
+    //     }
+    // }
     // console.log(val);
+
+    const changeName = () => {
+        let val = myName;
+        (val === "Patakha Singh") ? setMyName("Deepak Junglee") : setMyName("Patakha Singh")
+    }
+
     return (
         <>
             <div className="container">
