@@ -19,12 +19,12 @@ body {
     color: #8be3fb;
 }
 
-div{
+/* div{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 .h1Style{
     background-color: aliceblue;

@@ -1,9 +1,10 @@
 // import React, { useState } from 'react'
-import "./App.css";
+// import "./App.css";
 // import RulesHooks from "./components/RulesHooks"
 // import UseStateArray from "./components/UseStateArray";
 // import UseStateObject from "./components/UseStateObject";
-import ShortCircuitEval from "./components/ShortCircuitEval";
+// import ShortCircuitEval from "./components/ShortCircuitEval";
+import BasicForm from "./components/forms/BasicForm";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -43,7 +44,8 @@ const App = () => {
                 {/* <RulesHooks /> */}
                 {/* <UseStateArray /> */}
                 {/* <UseStateObject /> */}
-                <ShortCircuitEval />
+                {/* <ShortCircuitEval /> */}
+                <BasicForm />
             </div>
         </>
     )
