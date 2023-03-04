@@ -25,3 +25,10 @@ div{
     align-items: center;
     flex-direction: column;
 }
+
+.h1Style{
+    background-color: aliceblue;
+    border-radius: 25px;
+    color: navy;
+    padding: 10px;
+}
