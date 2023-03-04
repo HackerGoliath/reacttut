@@ -1,8 +1,9 @@
 // import React, { useState } from 'react'
 import "./App.css";
 // import RulesHooks from "./components/RulesHooks"
-import UseStateArray from "./components/UseStateArray";
+// import UseStateArray from "./components/UseStateArray";
 // import UseStateObject from "./components/UseStateObject";
+import ShortCircuitEval from "./components/ShortCircuitEval";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -40,8 +41,9 @@ const App = () => {
                 <button className='btn btn-warning m-5' onClick={changeName}>Click Me Plzz</button> */}
 
                 {/* <RulesHooks /> */}
-                <UseStateArray />
+                {/* <UseStateArray /> */}
                 {/* <UseStateObject /> */}
+                <ShortCircuitEval />
             </div>
         </>
     )
