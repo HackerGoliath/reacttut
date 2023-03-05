@@ -7,7 +7,8 @@ import "./App.css";
 // import BasicForm from "./components/forms/BasicForm";
 // import UseEffect1 from "./components/useEffect/UseEffect1"
 // import UseEffect2 from "./components/useEffect/UseEffect2";
-import UseEffectApi from "./components/useEffect/UseEffectApi";
+// import UseEffectApi from "./components/useEffect/UseEffectApi";
+import UnControlled from "./components/forms/UnControlled";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -55,7 +56,11 @@ const App = () => {
                 {/* <UseEffect1 /> */}
                 {/* <UseEffect2 /> */}
                 {/* Project: Fetch github users API */}
-                <UseEffectApi />
+                {/* <UseEffectApi /> */}
+
+                {/* useRef Hook */}
+                {/* UnControlled Form */}
+                <UnControlled />
             </div>
         </>
     )
