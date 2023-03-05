@@ -4,10 +4,15 @@ const UseEffect1 = () => {
     const [count, setCount] = useState(0)
 
     useEffect(() => {
-        console.log("Hello useEffect");
-        document.title = `Chat(${count})`
+        // console.log("Hello useEffect");
+        if (count >= 1) {
+            document.title = `Chats (${count})`
+        }
+        else {
+            document.title = `Chat`
+        }
     })
-    console.log("Hello Outside of useEffect");
+    // console.log("Hello Outside of useEffect");
 
     return (
         <>
