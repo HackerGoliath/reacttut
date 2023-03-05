@@ -5,7 +5,8 @@ import "./App.css";
 // import UseStateObject from "./components/UseStateObject";
 // import ShortCircuitEval from "./components/ShortCircuitEval";
 // import BasicForm from "./components/forms/BasicForm";
-import UseEffect1 from "./components/useEffect/UseEffect1"
+// import UseEffect1 from "./components/useEffect/UseEffect1"
+import UseEffect2 from "./components/useEffect/UseEffect2";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -50,7 +51,8 @@ const App = () => {
                 {/* <BasicForm /> */}
 
                 {/* useEffect Hook */}
-                <UseEffect1 />
+                {/* <UseEffect1 /> */}
+                <UseEffect2 />
             </div>
         </>
     )
