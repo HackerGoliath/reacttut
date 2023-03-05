@@ -1,10 +1,11 @@
 // import React, { useState } from 'react'
-// import "./App.css";
+import "./App.css";
 // import RulesHooks from "./components/RulesHooks"
 // import UseStateArray from "./components/UseStateArray";
 // import UseStateObject from "./components/UseStateObject";
 // import ShortCircuitEval from "./components/ShortCircuitEval";
-import BasicForm from "./components/forms/BasicForm";
+// import BasicForm from "./components/forms/BasicForm";
+import UseEffect1 from "./components/useEffect/UseEffect1"
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -41,11 +42,15 @@ const App = () => {
                 {/* <h1 className='text-capitalize'>{myName}</h1>
                 <button className='btn btn-warning m-5' onClick={changeName}>Click Me Plzz</button> */}
 
+                {/* UseState Hook */}
                 {/* <RulesHooks /> */}
                 {/* <UseStateArray /> */}
                 {/* <UseStateObject /> */}
                 {/* <ShortCircuitEval /> */}
-                <BasicForm />
+                {/* <BasicForm /> */}
+
+                {/* useEffect Hook */}
+                <UseEffect1 />
             </div>
         </>
     )
