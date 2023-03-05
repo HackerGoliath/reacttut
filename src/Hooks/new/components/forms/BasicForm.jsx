@@ -8,10 +8,16 @@ const BasicForm = () => {
 
     const submitForm = (e) => {
         e.preventDefault()
-        const newEntry = { email: email, password: password }
-        setAllEntry([...allEntry, newEntry])
-        setEmail("")
-        setPassword("")
+
+        if (email && password) {
+            const newEntry = { id: new Date().getTime().toString(), email, password }
+            setAllEntry([...allEntry, newEntry])
+            setEmail("")
+            setPassword("")
+        }
+        else {
+            alert("Plzz fill data first");
+        }
     }
     return (
         <>
@@ -28,9 +34,14 @@ const BasicForm = () => {
                     </form>
                     <div>
                         {
-                            allEntry.map((currElem, ind) => {
+                            allEntry.map((currElem) => {
+                                const { id, email, password } = currElem
                                 return (
-                                    <p key={ind} className='bg-info my-2 p-3 rounded shadow-lg'>Email: {currElem.email} and password: {currElem.password}</p>
+                                    <div key={id} className='bg-info my-2 p-3 rounded shadow-lg'>
+                                        <p>Id: {id}</p>
+                                        <p >Email: {email}</p>
+                                        <p>Password: {password}</p>
+                                    </div>
                                 )
                             })
                         }
