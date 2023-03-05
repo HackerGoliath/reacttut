@@ -8,7 +8,8 @@ import "./App.css";
 // import UseEffect1 from "./components/useEffect/UseEffect1"
 // import UseEffect2 from "./components/useEffect/UseEffect2";
 // import UseEffectApi from "./components/useEffect/UseEffectApi";
-import UnControlled from "./components/forms/UnControlled";
+// import UnControlled from "./components/forms/UnControlled";
+import UseReducer from "./components/useReducer/UseReducer";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -60,7 +61,10 @@ const App = () => {
 
                 {/* useRef Hook */}
                 {/* UnControlled Form */}
-                <UnControlled />
+                {/* <UnControlled /> */}
+
+                {/* useReducer Hook */}
+                <UseReducer />
             </div>
         </>
     )

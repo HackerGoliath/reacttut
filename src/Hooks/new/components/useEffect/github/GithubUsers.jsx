@@ -1,9 +1,11 @@
 import React from 'react'
+import { FcApproval } from "react-icons/fc";
+import { RxGithubLogo } from "react-icons/rx";
 
 const GithubUsers = ({ users }) => {
     return (
         <>
-            <h2>List of Github Users</h2>
+            <h2 className='h1Style'>List of Github Users</h2>
             <div className="container-fluid mt-5">
                 <div className="row text-center">
 
@@ -18,7 +20,7 @@ const GithubUsers = ({ users }) => {
                                                 <img src={avatar_url} alt="" className='rounded' width="155" />
                                             </div>
                                             <div className="w-100 ml-3">
-                                                <h4 className='mb-0 mt-0 textLeft'>{login}</h4>
+                                                <h4 className='mb-0 mt-0 textLeft'><RxGithubLogo /> {login} <FcApproval /></h4>
                                                 <span className='textLeft'>{type}</span>
                                                 <div className='p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats'>
                                                     <div className="d-flex flex-column">
