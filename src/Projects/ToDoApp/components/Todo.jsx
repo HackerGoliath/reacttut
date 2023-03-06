@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "../App.css";
 import todo from "../images/todo.svg"
 
+// Get data from local storage
 const getLocalItems = () => {
     let list = localStorage.getItem('lists');
     console.log(list);
