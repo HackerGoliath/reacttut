@@ -10,7 +10,8 @@ import "./App.css";
 // import UseEffectApi from "./components/useEffect/UseEffectApi";
 // import UnControlled from "./components/forms/UnControlled";
 // import UseReducer from "./components/useReducer/UseReducer";
-import CompA from "./components/useContext/CompA";
+// import CompA from "./components/useContext/CompA";
+import CustomHook from "./components/customHook/CustomHook";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -68,7 +69,10 @@ const App = () => {
                 {/* <UseReducer /> */}
 
                 {/* useContext Hook */}
-                <CompA />
+                {/* <CompA /> */}
+
+                {/* Custom Hook */}
+                <CustomHook />
             </div>
         </>
     )
