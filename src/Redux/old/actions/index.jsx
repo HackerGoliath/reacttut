@@ -10,3 +10,16 @@ export const decNumber = (num) => {
         paylallu: num
     }
 }
+
+export const multNumber = (num) => {
+    return {
+        type: "MULT",
+        payload: num
+    }
+}
+export const divNumber = (num) => {
+    return {
+        type: "DIV",
+        paylallu: num
+    }
+}
