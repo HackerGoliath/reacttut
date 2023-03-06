@@ -1,5 +1,5 @@
 // import React, { useState } from 'react'
-import "./App.css";
+// import "./App.css";
 // import RulesHooks from "./components/RulesHooks"
 // import UseStateArray from "./components/UseStateArray";
 // import UseStateObject from "./components/UseStateObject";
@@ -11,7 +11,8 @@ import "./App.css";
 // import UnControlled from "./components/forms/UnControlled";
 // import UseReducer from "./components/useReducer/UseReducer";
 // import CompA from "./components/useContext/CompA";
-import CustomHook from "./components/customHook/CustomHook";
+// import CustomHook from "./components/customHook/CustomHook";
+// import Index from "./components/useLocation/Index";
 
 const App = () => {
     // console.log(useState("Deepak Babu"));
@@ -72,7 +73,14 @@ const App = () => {
                 {/* <CompA /> */}
 
                 {/* Custom Hook */}
-                <CustomHook />
+                {/* <CustomHook /> */}
+                {/* ----------------------------------------------- */}
+
+                {/* React-router-dom Hooks */}
+                {/* useLocation Hook */}
+                {/* <Index /> */}
+                {/* ======================================================== */}
+
             </div>
         </>
     )
