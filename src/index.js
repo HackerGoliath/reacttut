@@ -719,10 +719,12 @@ document.getElementById("root")
 
 // Redux Toolkit Tutorial
 import App from './Redux/ReduxToolkit/App';
+import { Provider } from 'react-redux';
+import store from './Redux/ReduxToolkit/store';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
 )
