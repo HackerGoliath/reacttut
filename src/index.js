@@ -10,8 +10,8 @@ import React from 'react'; // for using JSX we must import react
 // import ReactDOM from 'react-dom';
 import ReactDOM from 'react-dom/client';
 // Bootstrap
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+// import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 // import App from './App';
 // import "./index.css";
 
@@ -702,16 +702,27 @@ document.getElementById("root")
 // ============================================================
 
 // Redux Tutorial
-import App from './Redux/old/App';
-import store from './Redux/old/store';
-import { Provider } from 'react-redux';
+// import App from './Redux/old/App';
+// import store from './Redux/old/store';
+// import { Provider } from 'react-redux';
 
-store.subscribe(() => console.log(store.getState()));
+// store.subscribe(() => console.log(store.getState()));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   </React.StrictMode>
+// );
+// =======================================================================
+
+// Redux Toolkit Tutorial
+import App from './Redux/ReduxToolkit/App';
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <App />
   </React.StrictMode>
-);
+)
