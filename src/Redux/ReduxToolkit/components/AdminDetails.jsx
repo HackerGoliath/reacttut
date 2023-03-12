@@ -1,36 +1,36 @@
 import React from 'react'
-import styled from "styled-components";
-import DeleteAllUser from './DeleteAllUser'
-import { fakeAdminData } from '../api';
+import styled from 'styled-components';
+import DispalyAdmins from './DispalyAdmins';
 import { useDispatch } from 'react-redux';
 import { addAdmin } from '../store/slices/AdminSlice';
-import DisplayAdmins from './DisplayAdmins';
+import { fakeAdminData } from '../api';
+import DeleteAllAdmins from './DeleteAllAdmins';
 
 const AdminDetails = () => {
     const dispatch = useDispatch();
     const addNewAdmin = (payload) => {
-        // console.log(payload);
-        dispatch(addAdmin(payload));
+        dispatch(addAdmin(payload))
     }
     return (
         <Wrapper>
+            <hr />
             <div className='content'>
                 <div className="admin-table">
                     <div className="admin-subtitle">
                         List of Admin Details
                     </div>
-                    <button className='btn add-btn' onClick={() => addNewAdmin(fakeAdminData())}>Add New Admins</button>
+                    <button className='btn add-btn' onClick={() => addNewAdmin(fakeAdminData())}>Add New Admin
+                    </button>
                 </div>
                 <ul>
-                    <DisplayAdmins />
+                    <DispalyAdmins />
                 </ul>
                 <hr />
-                <DeleteAllUser />
+                <DeleteAllAdmins />
             </div>
         </Wrapper>
     )
 }
-
 
 
 const Wrapper = styled.section`
@@ -74,5 +74,4 @@ const Wrapper = styled.section`
     }
   }
 `;
-
 export default AdminDetails

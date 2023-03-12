@@ -1,16 +1,17 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import { clearAllUsers } from '../store/slices/UserSlice'
+import { useDispatch } from 'react-redux'
+// import { clearAllAdmins } from '../store/slices/AdminSlice'
+import { clearAllUsers } from '../store/actions'
 
-const DeleteAllUser = () => {
+const DeleteAllAdmins = () => {
     const dispatch = useDispatch();
     const deleteUsers = () => {
         dispatch(clearAllUsers())
     }
     return (
         <Wrapper>
-            <button className='btn clear-btn' onClick={deleteUsers}>Clear Users</button>
+            <button className='btn clear-btn' onClick={deleteUsers}>Clear Admins</button>
         </Wrapper>
     )
 }
@@ -22,5 +23,4 @@ const Wrapper = styled.section`
         margin-top:2rem;
     }
 `
-
-export default DeleteAllUser
+export default DeleteAllAdmins

@@ -1,16 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 import { useSelector, useDispatch } from 'react-redux'
-import styled from "styled-components"
-import { MdDeleteForever } from "react-icons/md"
+import { MdDeleteForever } from 'react-icons/md'
 import { removeAdmin } from '../store/slices/AdminSlice'
 
-const DisplayAdmins = () => {
+const DispalyAdmins = () => {
     const dispatch = useDispatch();
 
     const data = useSelector((state) => {
-        return state.admins;
+        return state.admins
     });
-    console.log(data);
 
     const deleteAdmin = (id) => {
         dispatch(removeAdmin(id))
@@ -20,7 +19,8 @@ const DisplayAdmins = () => {
             {
                 data.map((admin, id) => {
                     return (
-                        <li key={id}>{admin}
+                        <li key={id}>
+                            {admin}
                             <button className='btn-delete' onClick={() => deleteAdmin(id)}>
                                 <MdDeleteForever className='delete-icon' />
                             </button>
@@ -46,5 +46,4 @@ li{
     }
 }
 `
-
-export default DisplayAdmins
+export default DispalyAdmins

@@ -13,7 +13,7 @@ const userSlice = createSlice({
             // console.log("hi", action.payload);
 
             // Deletes last element
-            state.pop(action.payload)
+            // state.pop(action.payload)
 
             // Delete clicked element(2nd arg is the no of element you want to delete)
             state.splice(action.payload, 1)
