@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const userSlice = createSlice({
-    name: "user",
+const adminSlice = createSlice({
+    name: "admins",
     initialState: [],
     reducers: {
-        addUser(state, action) {
+        addAdmin(state, action) {
             state.push(action.payload)
             // console.log(action.payload);
         },
-        removeUser(state, action) {
+        removeAdmin(state, action) {
             // console.log("hi", action.payload);
 
             // Deletes last element
@@ -22,15 +22,10 @@ const userSlice = createSlice({
             // state.splice(userIndexNum,1f)
         },
 
-        clearAllUsers(state, action) {
+        clearAllAdmins(state, action) {
             return []
         },
     },
-    extraReducers(builder) {
-        builder.addCase(userSlice.actions.clearAllUsers, () => {
-            return []
-        })
-    }
 
 });
 
@@ -41,5 +36,5 @@ const userSlice = createSlice({
 
 // console.log(userSlice);
 // console.log(userSlice.actions);
-export default userSlice.reducer;
-export const { addUser, removeUser, clearAllUsers } = userSlice.actions;
+export default adminSlice.reducer;
+export const { addAdmin, removeAdmin, clearAllAdmins } = adminSlice.actions;
